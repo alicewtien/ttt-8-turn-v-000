@@ -34,9 +34,6 @@ def turn(board)
     move(board, index, player = "X")
     display_board(board)
   else
-    puts "Invalid move"
-    turn(board)
-  while valid_move?(board, index) == true
     turn(board)
   end
 end
