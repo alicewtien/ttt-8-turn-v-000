@@ -10,16 +10,8 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 
-def position_taken?(board, index)
-  if index.between?(0, 8) && (board[index] == "X" || board[index] == "O")
-    return true
-  else
-    return false
-  end
-end
-
 def valid_move?(board, index)
-  if position_taken?(board, index) == true
+  if index.between?(0, 8) && board[index] == "X" || "O"
     return false
   else
     return true
