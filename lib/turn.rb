@@ -7,7 +7,6 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  input = gets.strip
   index = input.to_i - 1
 end
 
